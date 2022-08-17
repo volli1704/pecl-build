@@ -23,7 +23,7 @@ usage() {
 
 main() {
     script_dir=$(cd $(dirname $0); pwd)
-    opts=`getopt -o hvj:az -l help,verbose,php-version:,all,zend-extension,dry, -- "$@"`
+    opts=`getopt -o hvjc:az -l help,verbose,configure_options,php-version:,all,zend-extension,dry, -- "$@"`
     eval set -- "$opts"
     while [ -n "$1" ]; do
         case $1 in
