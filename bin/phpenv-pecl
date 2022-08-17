@@ -18,6 +18,7 @@ usage() {
     echo "  -a, --all               build for all php verions phpenv have. when -a used, -j option is ignored."
     echo "  -z, --zend-extension    registerd zend_extensin at ini file generated."
     echo "  --dry                   dry run mode."
+    echo " -c --configure_options   add configure option parameter which will be invoked with ./configure script"
     exit 1;
 }
 
