@@ -83,7 +83,7 @@ _build_extension() {
             return
         fi
 
-        local options=
+        local options=$opts
         if [ $is_zend ];then
             options="-z $options"
         fi
