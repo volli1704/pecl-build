@@ -32,6 +32,7 @@ main() {
             -a|--all) is_all=1;;
             -z|--zend-extension) is_zend=1;;
             -v|--verbose) is_verbose=1;;
+            -c|--configure_options) configure_options=$2; shift;;
             --dry) is_dry=1;;
             --) shift; break;;
             *) usage;;
